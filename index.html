@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Login</title>
+</head>
+<body>
+    <nav>
+        <ul class="sidebar">
+            <li id="login">
+                <div class="barra"></div>
+                <p class="menu">Login</p>
+            </li>
+            <li id="registro">
+                <div class="barra"></div>
+                <p class="menu">Registro</p>
+            </li>
+            <li id="ingreso">
+                <div class="barra"></div>
+                <p class="menu">Ingresar Clientes</p>
+            </li>
+        </ul>
+    </nav>
+    <div id="formulario">
+        <div id="form-login">
+            <label>Usuario</label>
+            <br>
+            <input type="text" id="usuario">
+            <br>
+            <br>
+            <label>Contraseña</label>
+            <br>
+            <input type="password" id="contraseñal">
+            <br>
+            <br>
+            <button id="botonlogin" onclick="mostrarlogin()">Iniciar Sesion</button>
+        </div>
+        <div id="form-registro">
+            <label>Correo Electronico</label>
+            <input type="email" id="correo">
+            <br>
+            <br>
+            <label>Nombre</label>
+            <input type="text" id="nombre">
+            <br>
+            <br>
+            <label>Contraseña</label>
+            <input type="password" id="contraseñar">
+            <br>
+            <br>
+            <label>Confirma tu Contraseña</label>
+            <input type="password" id="contraseñar1">
+            <br>
+            <br>
+            <button id="botonregistro" onclick="mostrarregistro()">Registrar</button>
+        </div>
+        <div id="form-ingreso">
+            <label>Nombre Cliente</label>
+            <input type="text" id="nombrec">
+            <br>
+            <br>
+            <label>Apellido Cliente</label>
+            <input type="text" id="apellido">
+            <br>
+            <br>
+            <label>CUI Cliente</label>
+            <input type="text" id="CUI">
+            <br>
+            <br>
+            <label>Departamento</label>
+            <input type="text" id="departamento">
+            <br>
+            <br>
+            <button id="botoningreso" onclick="mostrarDatos()">Ingresar Cliente</button>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
