@@ -75,6 +75,7 @@ li:hover div.barra{
     font-size: 1em;
     color: white;
     border-radius: 10cm;
+
 }
 
 #botonregistro{
@@ -98,4 +99,9 @@ li:hover div.barra{
     left: 0;
     width: 250px;
     height: 100%;
+}
+img{
+    width: 400px;
+    display: block;
+    margin-top: auto;
 }
