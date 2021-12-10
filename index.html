@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>Login</title>
 </head>
 <body>
@@ -28,15 +29,16 @@
         <div id="form-login">
             <label>Usuario</label>
             <br>
-            <input type="text" id="usuario">
+            <input type="text" id="usuario" aria-describedby="emailHelp" placeholder="Introduzca su Usuario">
+            <small id="emailHelp" class="form-text text-muted">.</small>
             <br>
             <br>
             <label>Contraseña</label>
             <br>
-            <input type="password" id="contraseñal">
+            <input type="password" id="contraseñal" aria-describedby="emailHelp" placeholder="Introduzca su Contraseña">
             <br>
             <br>
-            <button id="botonlogin" onclick="mostrarlogin()">Iniciar Sesion</button>
+            <button id="botonlogin" onclick="mostrarlogin()"  class="btn btn-primary">Iniciar Sesion</button>
         </div>
         <div id="form-registro">
             <label>Correo Electronico</label>
@@ -55,7 +57,7 @@
             <input type="password" id="contraseñar1">
             <br>
             <br>
-            <button id="botonregistro" onclick="mostrarregistro()">Registrar</button>
+            <button id="botonregistro" onclick="mostrarregistro()" class="btn btn-primary">Registrar</button>
         </div>
         <div id="form-ingreso">
             <label>Nombre Cliente</label>
@@ -74,7 +76,7 @@
             <input type="text" id="departamento">
             <br>
             <br>
-            <button id="botoningreso" onclick="mostrarDatos()">Ingresar Cliente</button>
+            <button id="botoningreso" onclick="mostrarDatos()" class="btn btn-primary">Ingresar Cliente</button>
         </div>
     </div>
     <script type="text/javascript" src="js/script.js"></script>
